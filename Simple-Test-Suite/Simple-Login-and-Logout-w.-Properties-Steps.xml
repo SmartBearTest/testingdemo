@@ -78,7 +78,7 @@
  <soapenv:Body>
  <sam:login>
  <username>Loginn${=String.valueOf(Math.random()).substring( 0, 5 )}</username>
- <password>Loginn123</password>
+ <password>testing123</password>
  </sam:login>
  </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
