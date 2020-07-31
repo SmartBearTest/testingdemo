@@ -169,14 +169,16 @@
       <con:interface>ServiceSoapBinding</con:interface>
       <con:operation>logout</con:operation>
       <con:request name="Test Request - logout" outgoingWss="" incomingWss="" id="e392e5ca-a4c2-42e6-a4a6-fb7f84b4990f" defaultOutgoingWss="" defaultIncomingWss="">
-        <con:settings/>
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>http://127.0.0.1:8082/mockServiceSoapBinding</con:endpoint>
         <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
  <soapenv:Header/>
  <soapenv:Body>
  <sam:logout>
- <sessionid/>
+ <sessionid>123ert</sessionid>
  </sam:logout>
  </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
